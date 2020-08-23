@@ -5,10 +5,15 @@ from django.shortcuts import render
 # 导入HTTPResponse 模块
 from django.http import HttpResponse
 # 导入数据模型 ArticlePost
-
 from .models import ArticlePost
 # 引入Markdown模块
 import markdown
+# 引入redirect重定向模块
+from django.shortcuts import render, redirect
+# 引入表单类
+from .forms import ArticlePostForm
+# 引入User模型
+from django.contrib.auth.models import User
 
 
 # 视图函数
@@ -50,4 +55,32 @@ def article_detail(request, id):
     # 载入模板，并返回 context对象
     return render(request, 'article/detail.html', context)
 
-#
+# 写文章视图
+def article_create(request):
+    # 判断用户是否提交数据
+    if request.method == 'POST':
+        # 将提交的数据赋值到表单实例中
+        article_post_form = ArticlePostForm(data=request.POST)
+        # 判断提交的数据是否满足模型的需求
+        if article_post_form.is_valid():
+            # 保存数据，但暂时不提交到数据库中
+            new_article = article_post_form.save(commit=False)
+            # 指定数据库中 id=1 的用户作为作者
+            new_article.author = User.objects.get(id=1)
+            # 将新文章保存到数据库中
+            new_article.save()
+            # 完成返回到文章列表
+            return redirect("article:article_list")
+        # 数据不合法，则返回错误信息
+        else:
+            return HttpResponse("表单内容有误，请重新填写。")
+    # 如果用户请求获取数据
+    else:
+        # 创建表单类实例
+        article_post_form = ArticlePostForm()
+        # 赋值上下文
+        context = {
+            "article_post_form": article_post_form
+        }
+        # 返回模板
+        return render(request, 'article/create.html', context)
