@@ -94,3 +94,43 @@ def article_delete(request, id):
     article.delete()
     # 完成删除后返回文章列表
     return redirect("article:article_list")
+
+# 修改文章
+def article_update(request, id):
+    """
+    更新文章的视图函数
+    通过POST方法提交表单，更新titile、body_content字段
+    GET方法进入初始表单页面
+    id： 文章的 id
+    """
+    # 获取需要修改的文章对象
+    article = ArticlePost.objects.get(id=id)
+    # 判断用户是否是 POST 提交数据表单
+    if request.method == "POST":
+        # 将提交的数据赋值到表单实例中
+        article_post_form = ArticlePostForm(data=request.POST)
+        # 判断提交的数据是否满足模型的要求
+        if article_post_form.is_valid():
+            # 保存新写入的 title、body_content 数据并保存
+            article.title = request.POST['title']
+            article.body_content = request.POST['body_content']
+            article.save()
+            # 完成修改后，返回修改后的文章。需要传入文章的 id
+            return redirect("article:article_detail", id=id)
+        # 如果用户提交的数据不合法，返回错误信息
+        else:
+            return HttpResponse("表单内容有误，请重新填写。")
+
+    # 如果用户 GET 请求获取数据
+    else:
+        # 创建表单类实例
+        article_post_form = ArticlePostForm()
+        # 赋值上下文，将 article 文章对象转进去，以便提取旧内容
+        context = {
+            "article": article,
+            "article_post_form": article_post_form
+        }
+        # 返回模板
+        return render(request, 'article/update.html', context)
+
+
