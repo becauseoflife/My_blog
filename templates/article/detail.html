@@ -17,7 +17,8 @@
             <div class="col-12 alert alert-success">作者：{{ article.author }}</div>
             <!-- 文章正文 -->
             <div class="col-12">
-                <p>{{ article.body_content }}</p>
+                {# 在 article.body 后加上 |safe 过滤器#}
+                <p>{{ article.body_content | safe }}</p>
             </div>
         </div>
     </div>
