@@ -84,3 +84,13 @@ def article_create(request):
         }
         # 返回模板
         return render(request, 'article/create.html', context)
+
+
+# 删除文章
+def article_delete(request, id):
+    # 根据id获取需要删除的文章
+    article = ArticlePost.objects.get(id=id)
+    # 调用 .delete() 方法删除文章
+    article.delete()
+    # 完成删除后返回文章列表
+    return redirect("article:article_list")
