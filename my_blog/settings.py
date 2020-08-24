@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # my app
     'article.apps.ArticleConfig',
     'userprofile.apps.UserprofileConfig',
+    # 修改密码 第三方库
+    'password_reset',
 ]
 
 MIDDLEWARE = [
@@ -123,8 +125,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+# 静态文件
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
 STATIC_URL = '/static/'
+
+# SMTP服务器，改为你邮箱的SMTP
+EMAIL_HOST = 'smtp.qq.com'
+# 邮箱名
+EMAIL_HOST_USER = '1752196851@qq.com'
+# 邮箱密码
+EMAIL_HOST_PASSWORD = 'didcxceupmowbfcj'
+# 发送邮件的端口
+EMAIL_PORT = 25
+# 是否使用 TLS
+EMAIL_USE_TLS = True
+# 默认的发件人
+DEFAULT_FROM_EMAIL = '面包的个人网站 <1752196851@qq.com>'
