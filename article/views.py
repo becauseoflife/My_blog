@@ -17,6 +17,8 @@ from .forms import ArticlePostForm
 from django.contrib.auth.models import User
 # 引入分页模块
 from django.core.paginator import Paginator
+# 引入 Q 对象
+from django.db.models import Q
 
 
 # 视图函数
@@ -28,12 +30,35 @@ def article_list(request):
 
     # 根据GET请求中查询条件
     # 返回不同排序的对象数组
-    if request.GET.get('order') == 'total_views':
-        all_article = ArticlePost.objects.all().order_by('-total_views')
-        order = 'total_views'
+    # if request.GET.get('order') == 'total_views':
+    #     all_article = ArticlePost.objects.all().order_by('-total_views')
+    #     order = 'total_views'
+    # else:
+    #     all_article = ArticlePost.objects.all()
+    #     order = 'normal'
+
+    search = request.GET.get('search')
+    order = request.GET.get('order')
+    # 用户搜索逻辑
+    if search:
+        if order == 'total_views':
+            # 用 Q 对象 进行联合搜索
+            all_article = ArticlePost.objects.filter(
+                Q(title__icontains=search) |
+                Q(body_content__icontains=search)
+            ).order_by('-total_views')
+        else:
+            all_article = ArticlePost.objects.filter(
+                Q(title__icontains=search) |
+                Q(body_content__icontains=search)
+            )
     else:
-        all_article = ArticlePost.objects.all()
-        order = 'normal'
+        # 将search 参数置为空
+        search = ''
+        if order == 'total_views':
+            all_article = ArticlePost.objects.all().order_by('-total_views')
+        else:
+            all_article = ArticlePost.objects.all()
 
 
     # 每页显示 1 篇文章
@@ -46,7 +71,8 @@ def article_list(request):
     # 需要传递给模板（templates）的对象
     context = {
         'page_articles': page_articles,
-        'order': order
+        'order': order,
+        'search': search
     }
     # render 函数：载入模板 返回context对象
     return render(request, 'article/list.html', context)
