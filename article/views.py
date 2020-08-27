@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
 # Create your views here.
@@ -45,6 +46,10 @@ def article_detail(request, id):
     # 取出相应的文章
     article = ArticlePost.objects.get(id=id)
 
+    # 阅读量
+    article.total_views += 1
+    article.save(update_fields=['total_views'])
+
     # 将Markdown语法渲染成HTML样式
     article.body_content = markdown.markdown(article.body_content,
                                              extensions=[
@@ -64,6 +69,7 @@ def article_detail(request, id):
     }
     # 载入模板，并返回 context对象
     return render(request, 'article/detail.html', context)
+
 
 # 写文章视图
 def article_create(request):
@@ -105,7 +111,9 @@ def article_delete(request, id):
     # 完成删除后返回文章列表
     return redirect("article:article_list")
 
+
 # 修改文章
+@login_required(login_url='/userprofile/login/')
 def article_update(request, id):
     """
     更新文章的视图函数
@@ -115,6 +123,10 @@ def article_update(request, id):
     """
     # 获取需要修改的文章对象
     article = ArticlePost.objects.get(id=id)
+    # 过滤非作者用户
+    if request.user != article.author:
+        return HttpResponse("抱歉！你无权修改这篇文章！")
+
     # 判断用户是否是 POST 提交数据表单
     if request.method == "POST":
         # 将提交的数据赋值到表单实例中
@@ -142,5 +154,3 @@ def article_update(request, id):
         }
         # 返回模板
         return render(request, 'article/update.html', context)
-
-

@@ -10,6 +10,9 @@ from django.utils import timezone
 
 # 博客文章数据模型
 class ArticlePost(models.Model):
+    # 文章的阅读量
+    total_views = models.PositiveIntegerField(default=0)
+
     # 文章作者。参数 on_delete 用于指定数据删除的方式，避免两个关联表的数据不一致。
     author = models.ForeignKey(User, on_delete=models.CASCADE)
 
