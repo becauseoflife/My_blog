@@ -14,7 +14,7 @@
 <div class="container">
     <div class="row mt-2">
 
-        {% for article in all_article %}
+        {% for article in page_articles %}
         <!-- 文章内容 -->
         <div class="col-4 mb-4">
         <!-- 卡片容器 -->
@@ -33,6 +33,39 @@
         </div>
         {% endfor %}
 
+    </div>
+    <!-- 页码导航 -->
+    <div class="pagination row">
+        <div class="m-auto">
+            <span class="step-links">
+                <!-- 如果不是第一页，则显示上翻按钮 -->
+                {% if page_articles.has_previous %}
+                    <a href="?page=1" class="btn btn-success">
+                        &laquo; 1
+                    </a>
+                    <span>...</span>
+                    <a href="?page={{ page_articles.previous_page_number }}" class="btn btn-secondary">
+                        {{ page_articles.previous_page_number }}
+                    </a>
+                {% endif %}
+
+                <!-- 当前页面 -->
+                <span class="current btn btn-danger btn-lg">
+                    {{ page_articles.number }}
+                </span>
+
+                <!-- 如果不是最末页，则显示下翻按钮 -->
+                {% if page_articles.has_next %}
+                    <a href="?page={{ page_articles.next_page_number }}" class="btn btn-secondary">
+                        {{ page_articles.next_page_number }}
+                    </a>
+                    <span>...</span>
+                    <a href="?page={{ page_articles.paginator.num_pages }}" class="btn btn-success">
+                        {{ page_articles.paginator.num_pages }} &raquo;
+                    </a>
+                {% endif %}
+            </span>
+        </div>
     </div>
 </div>
 {% endblock content %}

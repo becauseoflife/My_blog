@@ -14,6 +14,8 @@ from django.shortcuts import render, redirect
 from .forms import ArticlePostForm
 # 引入User模型
 from django.contrib.auth.models import User
+# 引入分页模块
+from django.core.paginator import Paginator
 
 
 # 视图函数
@@ -22,9 +24,17 @@ def article_list(request):
     # return HttpResponse('Hello World!');
     # 取出所有的文章
     all_article = ArticlePost.objects.all()
+
+    # 每页显示 1 篇文章
+    pageinator = Paginator(all_article, 1)
+    # 获取 URL 中的页码
+    page = request.GET.get('page')
+    # 将导航对象相应的页码内容返回给 articles
+    page_articles = pageinator.get_page(page)
+
     # 需要传递给模板（templates）的对象
     context = {
-        'all_article': all_article
+        'page_articles': page_articles
     }
     # render 函数：载入模板 返回context对象
     return render(request, 'article/list.html', context)
