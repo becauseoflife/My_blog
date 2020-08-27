@@ -2,6 +2,7 @@
 from django import forms
 # 引入 User 模型
 from django.contrib.auth.models import User
+from .models import Profile
 
 
 # 登录表单， 继承了forms.Form 类
@@ -27,3 +28,10 @@ class UserRegisterForm(forms.ModelForm):
             return data.get('password')
         else:
             raise forms.ValidationError("两次输入的密码不一致，请重新输入！")
+
+
+# Profile 表单类
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ('phone', 'avatar', 'bio')
