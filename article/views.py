@@ -60,7 +60,6 @@ def article_list(request):
         else:
             all_article = ArticlePost.objects.all()
 
-
     # 每页显示 1 篇文章
     pageinator = Paginator(all_article, 3)
     # 获取 URL 中的页码
@@ -88,21 +87,22 @@ def article_detail(request, id):
     article.save(update_fields=['total_views'])
 
     # 将Markdown语法渲染成HTML样式
-    article.body_content = markdown.markdown(article.body_content,
-                                             extensions=[
-                                                 # 包含 缩写、表格等常用扩展
-                                                 'markdown.extensions.extra',
-                                                 # 语法高亮扩展
-                                                 'markdown.extensions.codehilite',
-                                                 # 目录扩展
-                                                 'markdown.extensions.toc',
-                                             ])
+    md = markdown.Markdown(extensions=[
+        # 包含 缩写、表格等常用扩展
+        'markdown.extensions.extra',
+        # 语法高亮扩展
+        'markdown.extensions.codehilite',
+        # 目录扩展
+        'markdown.extensions.toc',
+    ])
+    article.body_content = md.convert(article.body_content)
 
     # print(article.body_content)
 
     # 需要传递给模板的对象
     context = {
-        'article': article
+        'article': article,
+        'toc': md.toc
     }
     # 载入模板，并返回 context对象
     return render(request, 'article/detail.html', context)
