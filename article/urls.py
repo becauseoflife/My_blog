@@ -4,6 +4,8 @@ from django.urls import path, include
 import article.views
 
 # 正在部署的应用名称
+from article import views
+
 app_name = 'article'
 
 urlpatterns = [
@@ -12,4 +14,8 @@ urlpatterns = [
     path('article_create/', article.views.article_create, name='article_create'),
     path('article_delete/<int:id>/', article.views.article_delete, name='article_delete'),
     path('article_update/<int:id>/', article.views.article_update, name='article_update'),
+
+    # 类视图 详情
+    path('detail_view/<int:pk>/', views.ArticleDetailView.as_view(), name='detail_view'),
+    path('create_view/', views.ArticleCreateView.as_view(), name='create_view'),
 ]

@@ -197,3 +197,38 @@ def article_update(request, id):
         }
         # 返回模板
         return render(request, 'article/update.html', context)
+
+
+"""
+    --------类视图--------
+"""
+from django.views.generic import DateDetailView, CreateView
+
+
+class ArticleDetailView(DateDetailView):
+    queryset = ArticlePost.objects.all()
+    context_object_name = 'article'
+    template_name = 'article/detail.html'
+
+    def get_object(self, queryset=None):
+        """
+        获取需要展示的对象
+        :param queryset:
+        :return:
+        """
+        # 调用父类的方法
+        obj = super(ArticleDetailView, self).get_object()
+        # 浏览量 + 1
+        obj.total_views += 1
+        obj.save(update_fields=['total_views'])
+        return obj
+
+
+class ArticleCreateView(CreateView):
+    model = ArticlePost
+
+    fields = '__all__'
+    # 或者只填写部分字段，比如：
+    # fields = ['title', 'content']
+
+    template_name = 'article/create_by_class_view.html'
