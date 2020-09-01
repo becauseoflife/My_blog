@@ -6,6 +6,7 @@ from django.shortcuts import render
 # 导入HTTPResponse 模块
 from django.http import HttpResponse
 # 导入数据模型 ArticlePost
+from comment.models import Comment
 from .models import ArticlePost
 # 引入Markdown模块
 import markdown
@@ -82,6 +83,9 @@ def article_detail(request, id):
     # 取出相应的文章
     article = ArticlePost.objects.get(id=id)
 
+    # 取出文章的评论
+    comments = Comment.objects.filter(article=id)
+
     # 阅读量
     article.total_views += 1
     article.save(update_fields=['total_views'])
@@ -102,7 +106,9 @@ def article_detail(request, id):
     # 需要传递给模板的对象
     context = {
         'article': article,
-        'toc': md.toc
+        'toc': md.toc,
+        'comments': comments,
+
     }
     # 载入模板，并返回 context对象
     return render(request, 'article/detail.html', context)

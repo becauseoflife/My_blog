@@ -25,6 +25,9 @@ urlpatterns = [
     path('userprofile/', include('userprofile.urls', namespace='userprofile')),
     # 修改密码
     path('password_reset', include('password_reset.urls')),
+    # 评论
+    path('comment/', include('comment.urls', namespace='comment')),
+
 ]
 
 

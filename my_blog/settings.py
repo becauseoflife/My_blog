@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # my app
     'article.apps.ArticleConfig',
     'userprofile.apps.UserprofileConfig',
+    'comment.apps.CommentConfig',
     # 修改密码 第三方库
     'password_reset',
 ]
@@ -149,3 +150,7 @@ DEFAULT_FROM_EMAIL = '面包的个人网站 <1752196851@qq.com>'
 # 媒体文件地址
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+# 时区
+TIME_ZONE = 'Asia/Shanghai'
