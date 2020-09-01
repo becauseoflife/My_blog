@@ -10,6 +10,17 @@ from django.utils import timezone
 from django.urls import reverse
 
 
+# 栏目的model
+class ArticleColumn(models.Model):
+    # 栏目标题
+    title = models.CharField(max_length=100, blank=True)
+    # 创建时间
+    created_time = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.title
+
+
 # 博客文章数据模型
 class ArticlePost(models.Model):
     # 文章的阅读量
@@ -30,6 +41,15 @@ class ArticlePost(models.Model):
     # 文章更新时间。参数 auto_now=True 指定每次数据更新时自动写入当前时间
     updated_time = models.DateTimeField(auto_now=True)
 
+    # 文章的栏目 一对多外键关系
+    column = models.ForeignKey(
+        ArticleColumn,
+        null=True,
+        blank=True,
+        on_delete=models.CASCADE,
+        related_name='article'
+    )
+
     # 内部类 class Meta 用于给 model 定义元数据
     class Meta:
         # ordering 指定模型返回的数据的排列顺序
@@ -44,3 +64,6 @@ class ArticlePost(models.Model):
     # 获取文章地址
     def get_absolute_url(self):
         return reverse('article:article_detail', args=[self.id])
+
+
+
