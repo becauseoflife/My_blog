@@ -10,6 +10,8 @@ from django.utils import timezone
 
 from django.urls import reverse
 
+# 引入富文本框
+
 
 # 栏目的model
 from taggit.managers import TaggableManager

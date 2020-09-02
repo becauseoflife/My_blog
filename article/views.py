@@ -6,6 +6,7 @@ from django.shortcuts import render
 # 导入HTTPResponse 模块
 from django.http import HttpResponse
 # 导入数据模型 ArticlePost
+from comment.forms import CommentForm
 from comment.models import Comment
 from .models import ArticlePost, ArticleColumn
 # 引入Markdown模块
@@ -113,11 +114,15 @@ def article_detail(request, id):
 
     # print(article.body_content)
 
+    # 引入评论表单类
+    comment_form = CommentForm()
+
     # 需要传递给模板的对象
     context = {
         'article': article,
         'toc': md.toc,
         'comments': comments,
+        'comment_form': comment_form,
 
     }
     # 载入模板，并返回 context对象

@@ -9,6 +9,8 @@
 
 <!-- 写入 base.html 中定义的 content -->
 {% block content %}
+<script src="{% static 'ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js' %}"></script>
+<link rel="stylesheet" href="{% static 'prism/prism.css' %}">
 
     <div class="container">
         <div class="row">
@@ -47,12 +49,18 @@
                                         我也要发言：
                                     </strong>
                                 </label>
+                             <!--
                                 <textarea
                                     type="text"
                                     class="form-control"
                                     id="body"
                                     name="body_context"
                                     rows="2"></textarea>
+                                    -->
+                                <div>
+                                    {{ comment_form.media }}
+                                    {{ comment_form.body_context }}
+                                </div>
                             </div>
                             <!-- 提交按钮 -->
                             <button type="submit" class="btn btn-primary ">发送</button>
@@ -82,7 +90,7 @@
                                 {{ comment.created_time|date:"Y-m-d H:i:s" }}
                             </span> 时说：
                         </p>
-                        <pre style="font-family: inherit; font-size: 1em;">{{ comment.body_context }}</pre>
+                        <pre style="font-family: inherit; font-size: 1em;">{{ comment.body_context | safe }}</pre>
                     {% endfor %}
                 </div>
             </div>
@@ -118,4 +126,10 @@
         }
     </script>
 
+    <!-- 新增代码 找到页面中class='django-ckeditor-widget'的容器，然后删除这个容器的style属性。 -->
+    {% block script %}
+        <script>
+            $(".django-ckeditor-widget").removeAttr('style');
+        </script>
+    {% endblock script %}
 {% endblock %}
