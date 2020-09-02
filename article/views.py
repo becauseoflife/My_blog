@@ -40,26 +40,34 @@ def article_list(request):
 
     search = request.GET.get('search')
     order = request.GET.get('order')
+    column = request.GET.get('column')
+    tag = request.GET.get('tag')
+
+    # 初始化查询集合
+    all_article = ArticlePost.objects.all()
+
     # 用户搜索逻辑
     if search:
-        if order == 'total_views':
-            # 用 Q 对象 进行联合搜索
-            all_article = ArticlePost.objects.filter(
-                Q(title__icontains=search) |
-                Q(body_content__icontains=search)
-            ).order_by('-total_views')
-        else:
-            all_article = ArticlePost.objects.filter(
-                Q(title__icontains=search) |
-                Q(body_content__icontains=search)
-            )
+        # 用 Q 对象 进行联合搜索
+        all_article = all_article.filter(
+            Q(title__icontains=search) |
+            Q(body_content__icontains=search)
+        ).order_by('-total_views')
     else:
         # 将search 参数置为空
         search = ''
-        if order == 'total_views':
-            all_article = ArticlePost.objects.all().order_by('-total_views')
-        else:
-            all_article = ArticlePost.objects.all()
+
+    # 栏目查询
+    if column is not None and column.isdigit():
+        all_article = all_article.filter(column=column)
+
+    # 标签查询
+    if tag and tag != 'None':
+        all_article = all_article.filter(tags__name__in=[tag])
+
+    # 查询集排序
+    if order == 'total_views':
+        all_article = all_article.order_by('-total_views')
 
     # 每页显示 1 篇文章
     pageinator = Paginator(all_article, 3)
@@ -72,7 +80,9 @@ def article_list(request):
     context = {
         'page_articles': page_articles,
         'order': order,
-        'search': search
+        'search': search,
+        'column': column,
+        'tag': tag,
     }
     # render 函数：载入模板 返回context对象
     return render(request, 'article/list.html', context)
@@ -130,6 +140,10 @@ def article_create(request):
                 new_article.column = ArticleColumn.objects.get(id=request.POST['column'])
             # 将新文章保存到数据库中
             new_article.save()
+
+            # 新增代码 ，保存tags的多对多关系
+            article_post_form.save_m2m()
+
             # 完成返回到文章列表
             return redirect("article:article_list")
         # 数据不合法，则返回错误信息
@@ -205,7 +219,7 @@ def article_update(request, id):
         context = {
             "article": article,
             "article_post_form": article_post_form,
-            'columns': columns 
+            'columns': columns
         }
         # 返回模板
         return render(request, 'article/update.html', context)

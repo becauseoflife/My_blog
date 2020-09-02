@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'comment.apps.CommentConfig',
     # 修改密码 第三方库
     'password_reset',
+    'taggit',
 ]
 
 MIDDLEWARE = [

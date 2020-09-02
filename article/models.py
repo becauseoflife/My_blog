@@ -11,6 +11,9 @@ from django.urls import reverse
 
 
 # 栏目的model
+from taggit.managers import TaggableManager
+
+
 class ArticleColumn(models.Model):
     # 栏目标题
     title = models.CharField(max_length=100, blank=True)
@@ -49,6 +52,9 @@ class ArticlePost(models.Model):
         on_delete=models.CASCADE,
         related_name='article'
     )
+
+    # 文章标签
+    tags = TaggableManager(blank=True)
 
     # 内部类 class Meta 用于给 model 定义元数据
     class Meta:
