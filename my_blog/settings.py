@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'taggit',
     # 富文本编辑框
     'ckeditor',
+    # 树形数据结构以及查询、修改树形数据的众多方法。
+    'mptt',
 ]
 
 MIDDLEWARE = [
