@@ -75,7 +75,7 @@
                                 btn-success
                             {% elif article.column.title == 'Java' %}
                                 btn-danger
-                            {% elif article.column.title == 'HTML' %}
+                            {% elif article.column.title == 'Python' %}
                                 btn-warning
                             {% endif %}
 
@@ -112,14 +112,18 @@
                 <!-- 注脚 -->
                 <p>
                     <!-- 附加信息 -->
-                    <span style="color: green;">
-                        {{ article.total_views }} 浏览&nbsp;&nbsp;&nbsp;
+                    <span>
+                        <i class="fa fa-eye" aria-hidden="true" style="color: lightskyblue;"></i>
+
+                        {{ article.total_views }}&nbsp;&nbsp;&nbsp;
                     </span>
                     <span style="color: blue;">
-                        {{ article.created_time|date:'Y-m-d' }} 发布&nbsp;&nbsp;&nbsp;
+                        <i class="fa fa-comments" aria-hidden="true" style="color: yellowgreen;"></i>
+                        {{ article.comments.count }}&nbsp;&nbsp;&nbsp;
                     </span>
                     <span style="color: darkred;">
-                        {{ article.updated_time|date:'Y-m-d' }} 更新
+                        <i class="fa fa-calendar-o" aria-hidden="true" style="color: pink;"></i>
+                        {{ article.created_time|date:'Y-m-d' }}
                     </span>
                 </p>
                 <hr>

@@ -97,16 +97,31 @@
 
 
                 <!-- 新增的目录 -->
-                <div class="col-3">
-                    <h4><strong>目录</strong></h4>
-                    <hr>
-                    <div>
-                        {{ toc|safe }}
+                <div class="col-3 sidebar" id="sidebar" >
+                    <div class="sidebar__inner">
+                        <h4><strong>目录</strong></h4>
+                        <hr>
+                        <div>
+                            {{ toc|safe }}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- 粘性侧边栏样式 -->
+    <style>
+        .sidebar{
+            will-change: min-height;
+        }
+
+        .sidebar__inner{
+            transform: translate(0, 0);
+            transform: translate3d(0, 0, 0);
+            will-change: position, transform;
+        }
+    </style>
 
     <script>
         // 删除文章的函数
@@ -126,10 +141,20 @@
         }
     </script>
 
-    <!-- 新增代码 找到页面中class='django-ckeditor-widget'的容器，然后删除这个容器的style属性。 -->
+
     {% block script %}
+        <!-- 新增代码 找到页面中class='django-ckeditor-widget'的容器，然后删除这个容器的style属性。 -->
         <script>
             $(".django-ckeditor-widget").removeAttr('style');
+        </script>
+
+        <!-- 引入粘性侧边栏 -->
+        <script src="{% static 'sticky_sidebar/jquery.sticky-sidebar.min.js' %}"></script>
+        <script type="text/javascript">
+            $('#sidebar').stickySidebar({
+                topSpacing: 20,
+                bottomSpacing: 20,
+            });
         </script>
     {% endblock script %}
 {% endblock %}
