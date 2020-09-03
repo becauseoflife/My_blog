@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'article.apps.ArticleConfig',
     'userprofile.apps.UserprofileConfig',
     'comment.apps.CommentConfig',
+    'notice.apps.NoticeConfig',
     # 修改密码 第三方库
     'password_reset',
     # 标签
@@ -50,6 +51,8 @@ INSTALLED_APPS = [
     'ckeditor',
     # 树形数据结构以及查询、修改树形数据的众多方法。
     'mptt',
+    # 通知系统
+    'notifications',
 ]
 
 MIDDLEWARE = [
