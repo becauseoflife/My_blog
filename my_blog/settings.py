@@ -224,3 +224,24 @@ SITE_ID = 1
 # 登录成功后重定向
 # LOGIN_REDIRECT_URL = '/article/article_list'
 LOGIN_REDIRECT_URL = '/'
+
+
+# 日志
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/debug.log'),
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
