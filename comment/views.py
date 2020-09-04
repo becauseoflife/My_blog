@@ -1,19 +1,40 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
+
+from django.middleware import clickjacking
 
 # Create your views here.
 
 
 # 文章评论
+from django.views.decorators.clickjacking import xframe_options_exempt
 from notifications.signals import notify
 
 from article.models import ArticlePost
 from comment.forms import CommentForm
 from comment.models import Comment
 
+"""
+    NGINX中可以设置 X-Frame-Options响应头
+    X-Frame-Options 响应头有三种不同的选项：
+    ALLOW-FROM：页面地址允许frame加载。 
+    SAMEORIGIN：页面地址只能被同源域名页面嵌入到frame中；
+    DENY：页面地址不能被嵌入到任何frame中；
+    在django中：
+    django中对应这三种类型：
+    xframe_options_exempt
+    xframe_options_sameorigin
+    xframe_options_deny
+    引入地址：
+    from django.views.decorators.clickjacking import xframe_options_exempt, xframe_options_sameorigin, xframe_options_deny
+    使用：
+    在 对应接口上添加对应的 装饰器 ， 使用xframe_options_exempt可避免问题的发生
+"""
 
+
+@xframe_options_exempt
 @login_required(login_url='/userprofile/login/')
 def post_comment(request, article_id, parent_comment_id=None):
     article = get_object_or_404(ArticlePost, id=article_id)
@@ -45,7 +66,11 @@ def post_comment(request, article_id, parent_comment_id=None):
                         action_objext=new_comment
                     )
 
-                return HttpResponse('200 OK')
+                # return HttpResponse('200 OK')
+                return JsonResponse({
+                    'code': "200 OK",
+                    'new_comment_id': new_comment.id
+                })
 
             new_comment.save()
 
@@ -59,7 +84,10 @@ def post_comment(request, article_id, parent_comment_id=None):
                     action_object=new_comment
                 )
 
-            return redirect(article)
+            # 新增代码，添加锚点
+            redirect_url = article.get_absolute_url() + '#comment_elem_' + str(new_comment.id)
+            # 修改redirect参数
+            return redirect(redirect_url)
         else:
             return HttpResponse("表单内容有误，请重新填写")
     # 处理 GET 请求
