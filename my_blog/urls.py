@@ -19,6 +19,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 import notifications.urls
 
+from article.views import article_list
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('article/', include('article.urls', namespace='article')),
@@ -31,6 +33,10 @@ urlpatterns = [
     # 通知
     path('inbox/notifications/', include(notifications.urls, namespace='notifications')),
     path('notice/', include('notice.urls', namespace='notice')),
+    # 第三方登录
+    path('accounts/', include('allauth.urls')),
+    # home
+    path('', article_list, name='home'),
 
 ]
 
