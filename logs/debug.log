@@ -1328,3 +1328,844 @@ D:\Python 3\my_blog\article\templatetags\my_filters_and_tags.py changed, reloadi
 Watching for file changes with StatReloader
 "GET /article/article_list HTTP/1.1" 200 17286
 "GET /media/article/20200902/test11.png HTTP/1.1" 304 0
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15538
+"GET /userprofile/login/ HTTP/1.1" 200 5475
+Watching for file changes with StatReloader
+"GET /accounts/login/ HTTP/1.1" 200 6748
+"GET /accounts/login/ HTTP/1.1" 200 6856
+"GET /static/css/style.login.register.css HTTP/1.1" 200 67512
+"GET /static/img/p_big3.jpg HTTP/1.1" 404 1668
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /static/img/p_big3.jpg HTTP/1.1" 404 1668
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /accounts/login/ HTTP/1.1" 200 6857
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET / HTTP/1.1" 200 15573
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+Watching for file changes with StatReloader
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/img/l.jpg HTTP/1.1" 404 1653
+"GET /static/img/lo.jpg HTTP/1.1" 404 1656
+"GET /static/img/log.jpg HTTP/1.1" 404 1659
+"GET /static/img/logi.jpg HTTP/1.1" 404 1662
+"GET /static/img/login.jpg HTTP/1.1" 404 1665
+"GET /static/img/login_.jpg HTTP/1.1" 404 1668
+"GET /static/img/login_b.jpg HTTP/1.1" 404 1671
+"GET /static/img/login_ba.jpg HTTP/1.1" 404 1674
+"GET /static/img/login_bac.jpg HTTP/1.1" 404 1677
+"GET /static/img/login_back.jpg HTTP/1.1" 404 1680
+"GET /static/img/login_backg.jpg HTTP/1.1" 404 1683
+"GET /static/img/login_backgr.jpg HTTP/1.1" 404 1686
+"GET /static/img/login_backgro.jpg HTTP/1.1" 404 1689
+"GET /static/img/login_backgrou.jpg HTTP/1.1" 404 1692
+"GET /static/img/login_backgroun.jpg HTTP/1.1" 404 1695
+"GET /static/img/login_background.jpg HTTP/1.1" 404 1698
+"GET /static/img/login_background.jp HTTP/1.1" 404 1695
+"GET /static/img/login_background.j HTTP/1.1" 404 1692
+"GET /static/img/login_background. HTTP/1.1" 404 1689
+"GET /static/img/login_background.p HTTP/1.1" 404 1692
+"GET /static/img/login_background.pn HTTP/1.1" 404 1695
+"GET /static/img/login_background.png HTTP/1.1" 200 7883
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6828
+"GET /static/css/style.login.register.css HTTP/1.1" 200 67420
+"GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+"GET /static/layer/layer.js HTTP/1.1" 200 22117
+"GET /static/md_css/monokai.css HTTP/1.1" 200 4251
+"GET /static/bootstrap-4.5.0-dist/css/bootstrap.min.css HTTP/1.1" 200 160409
+"GET /static/popper/popper.js HTTP/1.1" 200 67105
+"GET /static/bootstrap-4.5.0-dist/js/bootstrap.min.js HTTP/1.1" 200 60174
+"GET /static/img/login_background.png HTTP/1.1" 200 7883
+"GET /static/jquery/jquery-3.4.1.js HTTP/1.1" 200 290962
+"GET /static/bootstrap-4.5.0-dist/css/bootstrap.min.css.map HTTP/1.1" 200 646432
+"GET /static/layer/theme/default/layer.css?v=3.1.1 HTTP/1.1" 200 14367
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/bootstrap-4.5.0-dist/js/bootstrap.min.js.map HTTP/1.1" 200 191486
+"GET /accounts/login/ HTTP/1.1" 200 6799
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 6784
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /accounts/login/ HTTP/1.1" 200 6790
+"GET /accounts/login/ HTTP/1.1" 200 6792
+"GET /accounts/login/ HTTP/1.1" 200 6792
+"GET /accounts/login/ HTTP/1.1" 200 6792
+"GET /accounts/login/ HTTP/1.1" 200 6792
+"GET /accounts/login/ HTTP/1.1" 200 6795
+"GET /accounts/login/ HTTP/1.1" 200 10208
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 17292
+"GET /media/article/20200902/test_TqDKQ92.jpg HTTP/1.1" 200 26071
+"GET /media/article/20200902/test8_EefyxUX.png HTTP/1.1" 200 90819
+"GET /media/article/20200902/test11.png HTTP/1.1" 200 112744
+"GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15544
+"GET /accounts/login HTTP/1.1" 301 0
+"GET /accounts/login/ HTTP/1.1" 200 10208
+"GET /accounts/login/ HTTP/1.1" 200 10212
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /accounts/signup/ HTTP/1.1" 200 5207
+"GET /accounts/login/ HTTP/1.1" 200 10624
+"GET /accounts/signup/ HTTP/1.1" 200 5207
+"GET /accounts/signup/ HTTP/1.1" 200 5207
+"GET /accounts/signup/ HTTP/1.1" 200 5207
+"GET /accounts/signup/ HTTP/1.1" 200 5207
+"GET /accounts/signup/ HTTP/1.1" 200 5207
+"GET /accounts/login/ HTTP/1.1" 200 10982
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /accounts/password/reset/ HTTP/1.1" 200 4888
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 17292
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15544
+"GET /userprofile/login/ HTTP/1.1" 200 5481
+"GET /userprofile/register/ HTTP/1.1" 200 5726
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /userprofile/login/ HTTP/1.1" 200 5478
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/signup/ HTTP/1.1" 200 5204
+"GET /accounts/password/reset/ HTTP/1.1" 200 4885
+"GET /accounts/signup/ HTTP/1.1" 200 5204
+"GET /accounts/signup/ HTTP/1.1" 200 5204
+"GET /accounts/signup/ HTTP/1.1" 200 8277
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /accounts/signup/ HTTP/1.1" 200 8277
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_detail/17/ HTTP/1.1" 200 22336
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/thumbs_up.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/angel_smile.png HTTP/1.1" 304 0
+"GET /userprofile/login/ HTTP/1.1" 200 5478
+"GET /userprofile/register/ HTTP/1.1" 200 5723
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 11060
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 11069
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 11069
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 11114
+"GET /accounts/signup/ HTTP/1.1" 200 11118
+"GET /accounts/signup/ HTTP/1.1" 200 11069
+"POST /accounts/signup/ HTTP/1.1" 200 11249
+"POST /accounts/signup/ HTTP/1.1" 200 11249
+"POST /accounts/signup/ HTTP/1.1" 200 11249
+Not Found: /accounts/signup/login.html
+"GET /accounts/signup/login.html HTTP/1.1" 404 6697
+Not Found: /accounts/signup/login.html
+"GET /accounts/signup/login.html HTTP/1.1" 404 6697
+"GET /accounts/signup/ HTTP/1.1" 200 11108
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/signup/ HTTP/1.1" 200 11108
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 11108
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10067
+"POST /accounts/signup/ HTTP/1.1" 200 10067
+Internal Server Error: /userprofile/register/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\__init__.py", line 111, in login
+    backend = backend or user.backend
+AttributeError: 'User' object has no attribute 'backend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\userprofile\views.py", line 56, in user_register
+    login(request, new_user)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\__init__.py", line 117, in login
+    raise ValueError(
+ValueError: You have multiple authentication backends configured and therefore must provide the `backend` argument or set the `backend` attribute on the user.
+"POST /userprofile/register/ HTTP/1.1" 500 79487
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"POST /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 17292
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_detail/18/ HTTP/1.1" 200 78939
+"GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/config.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/ckeditor/ckeditor/lang/en.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/styles.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/plugin.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/lang/en.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/icons.png?t=JB9C HTTP/1.1" 200 12421
+"GET /static/ckeditor/ckeditor/contents.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 304 0
+"GET /comment/post_comment/18/2 HTTP/1.1" 200 3879
+"GET /static/csrf.js HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/signup/ HTTP/1.1" 200 10067
+"POST /accounts/signup/ HTTP/1.1" 200 10067
+Watching for file changes with StatReloader
+Forbidden (CSRF cookie not set.): /accounts/signup/
+"POST /accounts/signup/ HTTP/1.1" 403 2864
+Forbidden (CSRF token missing or incorrect.): /userprofile/register/
+"POST /userprofile/register/ HTTP/1.1" 403 2513
+"GET /userprofile/register/ HTTP/1.1" 200 5723
+"GET /accounts/signup/ HTTP/1.1" 200 10067
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 17292
+"GET /static/bootstrap-4.5.0-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /media/article/20200902/test8_EefyxUX.png HTTP/1.1" 304 0
+"GET /static/jquery/jquery-3.4.1.js HTTP/1.1" 304 0
+"GET /media/article/20200902/test11.png HTTP/1.1" 304 0
+"GET /static/layer/layer.js HTTP/1.1" 304 0
+"GET /media/article/20200902/test_TqDKQ92.jpg HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10067
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10067
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10067
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10067
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10067
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10057
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10057
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10057
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10057
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 5399
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 16785
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 5204
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10081
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 5300
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+Watching for file changes with StatReloader
+"POST /accounts/signup/ HTTP/1.1" 200 10120
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 16787
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 16787
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10120
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10120
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 5297
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 5480
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+Forbidden (CSRF token missing or incorrect.): /userprofile/register/
+"POST /userprofile/register/ HTTP/1.1" 403 2513
+"GET /userprofile/register/ HTTP/1.1" 200 5723
+"POST /accounts/signup/ HTTP/1.1" 200 10120
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10267
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10267
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10304
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10304
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10304
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10304
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'print(form.as_p)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\loader_tags.py", line 270, in do_extends
+    nodelist = parser.parse()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\loader_tags.py", line 213, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 70: 'print(form.as_p)', expected 'endblock'. Did you forget to register or load this tag?
+"GET /accounts/signup/ HTTP/1.1" 500 172339
+D:\Python 3\my_blog\my_blog\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /accounts/signup/ HTTP/1.1" 200 10611
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 10986
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"POST /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/signup/ HTTP/1.1" 200 10611
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 17292
+"GET /media/article/20200902/test8_EefyxUX.png HTTP/1.1" 304 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+"GET /static/prism/prism.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/angel_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/config.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/lang/zh.js?t=JB9C HTTP/1.1" 200 18470
+"GET /static/ckeditor/ckeditor/styles.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/plugin.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/lang/zh.js?t=JB9C HTTP/1.1" 200 380
+"GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/contents.css?t=JB9C HTTP/1.1" 304 0
+"GET /article/article_list HTTP/1.1" 200 17292
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /accounts/signup/ HTTP/1.1" 200 10611
+"POST /accounts/signup/ HTTP/1.1" 200 10850
+"POST /accounts/signup/ HTTP/1.1" 200 11122
+"POST /accounts/signup/ HTTP/1.1" 200 11398
+"POST /accounts/signup/ HTTP/1.1" 200 11138
+Internal Server Error: /accounts/signup/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: "field.errors['username']"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\loader_tags.py", line 270, in do_extends
+    nodelist = parser.parse()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\loader_tags.py", line 213, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\defaulttags.py", line 814, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\defaulttags.py", line 814, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\template\base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 69: 'field.errors['username']', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+"POST /accounts/signup/ HTTP/1.1" 500 204013
+"POST /accounts/signup/ HTTP/1.1" 200 11138
+"POST /accounts/signup/ HTTP/1.1" 200 11146
+"POST /accounts/signup/ HTTP/1.1" 200 11159
+"POST /accounts/signup/ HTTP/1.1" 200 11271
+"POST /accounts/signup/ HTTP/1.1" 200 11367
+"POST /accounts/signup/ HTTP/1.1" 200 11343
+"POST /accounts/signup/ HTTP/1.1" 200 11271
+"POST /accounts/signup/ HTTP/1.1" 200 12082
+"POST /accounts/signup/ HTTP/1.1" 200 11623
+"POST /accounts/signup/ HTTP/1.1" 200 11623
+"POST /accounts/signup/ HTTP/1.1" 200 11111
+"GET /accounts/login/ HTTP/1.1" 200 10979
+"GET /static/bootstrap-4.5.0-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/jquery/jquery-3.4.1.js HTTP/1.1" 304 0
+"GET /static/layer/layer.js HTTP/1.1" 304 0
+"POST /accounts/login/ HTTP/1.1" 200 11404
+"POST /accounts/login/ HTTP/1.1" 200 11400
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11404
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11404
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11440
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11440
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11440
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11662
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11887
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11800
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11754
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11754
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10632
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11182
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10632
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11182
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10632
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11182
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11051
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/password/reset/ HTTP/1.1" 200 4869
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/login/ HTTP/1.1" 200 11666
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/password/reset/ HTTP/1.1" 200 4869
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10632
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/signup/ HTTP/1.1" 200 10159
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 11234
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/signup/ HTTP/1.1" 200 11813
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11051
+"POST /accounts/login/ HTTP/1.1" 200 11666
+"GET /accounts/password/reset/ HTTP/1.1" 200 4869
+"GET /accounts/password/reset/ HTTP/1.1" 200 4869
+"POST /accounts/password/reset/ HTTP/1.1" 302 0
+"GET /accounts/password/reset/done/ HTTP/1.1" 200 4360
+"GET /accounts/password/reset/ HTTP/1.1" 200 4869
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/password/reset/ HTTP/1.1" 200 4869
+Watching for file changes with StatReloader
+"POST /accounts/login/ HTTP/1.1" 200 11666
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /accounts/password/reset/ HTTP/1.1" 200 4869
+"POST /accounts/password/reset/ HTTP/1.1" 200 4972
+"POST /accounts/password/reset/ HTTP/1.1" 200 9608
+"POST /accounts/password/reset/ HTTP/1.1" 200 9681
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 9160
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 9161
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7016
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 6960
+"POST /accounts/password/reset/ HTTP/1.1" 200 7016
+"POST /accounts/password/reset/ HTTP/1.1" 200 7521
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7508
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7211
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7273
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7273
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7279
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7176
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7270
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7299
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7295
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7349
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7377
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7427
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7377
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7399
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7497
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7493
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 7557
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 200 6787
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /accounts/password/reset/ HTTP/1.1" 302 0
+"GET /accounts/password/reset/done/ HTTP/1.1" 200 4360
+"GET /accounts/password/reset/done/ HTTP/1.1" 200 5266
+"GET /accounts/password/reset/done/ HTTP/1.1" 200 5434
+"GET /accounts/password/reset/done/ HTTP/1.1" 200 5437
+"GET /accounts/password/reset/done/ HTTP/1.1" 200 5456
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11051
+"GET /accounts/signup/ HTTP/1.1" 200 10159
+"GET /accounts/login/ HTTP/1.1" 200 11051
+"GET /accounts/login/ HTTP/1.1" 200 11139
+"GET /accounts/login/ HTTP/1.1" 200 11157
+"GET /accounts/login/ HTTP/1.1" 200 11161
+"GET /accounts/login/ HTTP/1.1" 200 11243
+"GET /accounts/login/ HTTP/1.1" 200 11244
+"GET /accounts/login/ HTTP/1.1" 200 11255
+"GET /accounts/login/ HTTP/1.1" 200 11261
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11367
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11553
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11552
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11533
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11569
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11688
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11700
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11700
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11688
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11699
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11780
+"GET /accounts/login/ HTTP/1.1" 200 11780
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11778
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11813
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11839
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11839
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11842
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11848
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11848
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 5574
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 5574
+"GET /accounts/login/ HTTP/1.1" 200 11848
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11848
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 11959
+"GET /static/css/style.login.register.css HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 12101
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 12100
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 12142
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 12184
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 5586
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 12737
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 12724
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 12723
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/login/ HTTP/1.1" 200 12723
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /accounts/github/login/?process= HTTP/1.1" 302 0
+"GET /accounts/github/login/callback/?code=91de66bb0b92a7b8e5a7&state=veT4SSM9Rg0u HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 16795
+"GET /media/article/20200902/test11.png HTTP/1.1" 304 0
+"GET /media/article/20200902/test_TqDKQ92.jpg HTTP/1.1" 304 0
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /accounts/login/ HTTP/1.1" 200 12723
+"GET /static/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+"GET /static/bootstrap-4.5.0-dist/css/bootstrap.min.css HTTP/1.1" 200 160409
+"GET /static/popper/popper.js HTTP/1.1" 200 67105
+"GET /static/md_css/monokai.css HTTP/1.1" 200 4251
+"GET /static/css/style.login.register.css HTTP/1.1" 200 67420
+"GET /static/bootstrap-4.5.0-dist/js/bootstrap.min.js HTTP/1.1" 200 60174
+"GET /static/layer/layer.js HTTP/1.1" 200 22117
+"GET /static/jquery/jquery-3.4.1.js HTTP/1.1" 200 290962
+"GET /static/img/login_background.png HTTP/1.1" 200 7883
+"GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+"GET /static/layer/theme/default/layer.css?v=3.1.1 HTTP/1.1" 200 14367
+"GET /accounts/github/login/?process= HTTP/1.1" 302 0
+"GET /accounts/github/login/callback/?code=d0e910321e29b74943fe&state=dML6328CEsTu HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 16795
+"GET /media/article/20200902/test8_EefyxUX.png HTTP/1.1" 200 90819
+"GET /media/article/20200902/test11.png HTTP/1.1" 200 112744
+"GET /media/article/20200902/test_TqDKQ92.jpg HTTP/1.1" 200 26071
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /accounts/login/ HTTP/1.1" 200 12723
+Internal Server Error: /accounts/weibo/login/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\allauth\socialaccount\providers\oauth2\views.py", line 73, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\allauth\socialaccount\providers\oauth2\views.py", line 96, in dispatch
+    app = provider.get_app(self.request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\allauth\socialaccount\providers\base.py", line 49, in get_app
+    return adapter.get_app(request, self.id)
+  File "D:\Python 3\my_blog\env\lib\site-packages\allauth\socialaccount\adapter.py", line 203, in get_app
+    app = SocialApp.objects.get_current(provider, request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\allauth\socialaccount\models.py", line 32, in get_current
+    app = self.get(
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\query.py", line 429, in get
+    raise self.model.DoesNotExist(
+allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query does not exist.
+"GET /accounts/weibo/login/?process= HTTP/1.1" 500 94831
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 17292

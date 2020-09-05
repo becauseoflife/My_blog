@@ -225,6 +225,7 @@ SITE_ID = 1
 # LOGIN_REDIRECT_URL = '/article/article_list'
 LOGIN_REDIRECT_URL = '/'
 
+LANGUAGE_CODE = 'zh-Hans'
 
 # 日志
 LOGGING = {

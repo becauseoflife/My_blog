@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="{% static 'md_css/monokai.css' %}">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+
+    <!-- 引入css模块 -->
+    {% block head %}{% endblock head %}
 </head>
 <body>
     <!-- 引入导航栏 -->
