@@ -98,7 +98,7 @@ class ArticlePost(models.Model):
         # 若文章是“最近”发表的，则返回True
         diff = timezone.now() - self.created_time
         # if diff.days <= 0 and diff.days < 60:
-        if diff.days == 0 and diff.seconds >= 0 and diff.seconds < 60:
+        if diff.days == 0 and 0 <= diff.seconds < 60:
             return True
         else:
             return False

@@ -21,7 +21,17 @@
                     <div>
                         作者：{{ article.author }}
                         {% if user == article.author %}
-                            <a href="#" onclick="confirm_delete()">删除文章</a>
+                           <!--  <a href="#" onclick="confirm_delete()">删除文章</a> -->
+                            <a href="#" onclick="confirm_safe_delete()">删除文章</a>
+                            <form
+                                    style="display:none;"
+                                    id="safe_delete"
+                                    action="{% url 'article:article_safe_delete' article.id %}"
+                                    method="POST"
+                            >
+                                {% csrf_token %}
+                                <button type="submit">发送</button>
+                            </form>
                             <a href="{% url "article:article_update" article.id %}">编辑文章</a>
                         {% endif %}
                     </div>
@@ -198,11 +208,23 @@
                 // 点击确定按钮后调用回调函数
                 yes: function (index, layero) {
                     // 指定当前前往的 url
-                    location.href='{% url "article:article_delete" article.id %}'
+                    location.href='{% url "article:article_safe_delete" article.id %}'
+                }
+            })
+        }
+
+        function confirm_safe_delete() {
+            layer.open({
+                title: "确认删除",
+                content: "确认删除这篇文章吗？",
+                yes: function(index, layero) {
+                    $('form#safe_delete button').click();
+                    layer.close(index);
                 }
             })
         }
     </script>
+
 
 
     {% block script %}

@@ -1,3 +1,5 @@
+import os
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 
@@ -8,6 +10,7 @@ from django.http import HttpResponse
 # 导入数据模型 ArticlePost
 from comment.forms import CommentForm
 from comment.models import Comment
+from my_blog.settings import BASE_DIR, MEDIA_URL
 from .models import ArticlePost, ArticleColumn
 # 引入Markdown模块
 import markdown
@@ -179,6 +182,28 @@ def article_delete(request, id):
     return redirect("article:article_list")
 
 
+# 安全删除文章
+@login_required(login_url='/userprofile/login/')
+def article_safe_delete(request, id):
+    if request.method == 'POST':
+        article = ArticlePost.objects.get(id=id)
+        if request.user != article.author:
+            return HttpResponse("抱歉，你无权修改这篇文章。")
+        # 删除旧图片
+        if article.avatar.name != '':
+            file_name = BASE_DIR + MEDIA_URL + article.avatar.name
+            # print(file_name)
+            article.delete()
+            if os.path.exists(file_name):
+                os.remove(file_name)
+                # print("删除成功！")
+
+
+        return redirect("article:article_list")
+    else:
+        return HttpResponse("仅允许post请求")
+
+
 # 修改文章
 @login_required(login_url='/userprofile/login/')
 def article_update(request, id):
@@ -207,17 +232,27 @@ def article_update(request, id):
             article.body_content = request.POST['body_content']
 
             # 如果 request。FILES 中存在文件，则保存
-            if 'avatar' in request.FILES and request.POST['avatar'] != 'none':
-                print(request.POST['avatar'])
-                article.avatar = request.POST['avatar']
+            if 'avatar' in request.FILES and request.FILES['avatar'] != 'none':
+                # print(request.FILES['avatar'])
+
+                # 删除旧图片
+                if article.avatar.name != '':
+                    file_name = BASE_DIR + MEDIA_URL + article.avatar.name
+                    # print(file_name)
+                    if os.path.exists(file_name):
+                        os.remove(file_name)
+                        # print("删除成功！")
+
+                article.avatar = request.FILES['avatar']
 
             if 'column' in request.POST and request.POST['column'] != 'none':
                 article.column = ArticleColumn.objects.get(id=request.POST['column'])
             else:
                 article.column = None
 
-            # 保存tags
-            article.tags.set(*request.POST.get('tags').split(','), clear=True)
+            if 'tags' in request.POST and request.POST['tags'] != '':
+                # 保存tags
+                article.tags.set(*request.POST.get('tags').split(','), clear=True)
 
             article.save()
 

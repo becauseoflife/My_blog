@@ -2596,3 +2596,410 @@ Watching for file changes with StatReloader
 "GET /article/article_list?tag=Django HTTP/1.1" 200 17229
 "GET /article/article_list?tag=Python HTTP/1.1" 200 17229
 "GET /article/article_list HTTP/1.1" 200 17221
+"GET /article/article_detail/19/ HTTP/1.1" 200 15851
+"GET /static/layer/theme/default/icon.png HTTP/1.1" 200 11493
+"GET /article/article_delete/19/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 17284
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+D:\Python 3\my_blog\article\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /article/article_list HTTP/1.1" 200 17284
+"GET /media/article/20200902/test11.png HTTP/1.1" 200 112744
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 304 0
+"GET /static/layer/layer.js HTTP/1.1" 200 22117
+"GET /static/bootstrap-4.5.0-dist/js/bootstrap.min.js HTTP/1.1" 200 60174
+"GET /static/jquery/jquery-3.4.1.js HTTP/1.1" 200 290962
+"GET /static/popper/popper.js HTTP/1.1" 200 67105
+"GET /static/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 77160
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_update/18/ HTTP/1.1" 200 9189
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'avatar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 212, in article_update
+    if 'avatar' in request.FILES and request.POST['avatar'] != 'none':
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'avatar'
+"POST /article/article_update/18/ HTTP/1.1" 500 85064
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'avatar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 212, in article_update
+    if 'avatar' in request.FILES and request.POST['avatar'] != 'none':
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'avatar'
+"POST /article/article_update/18/ HTTP/1.1" 500 85060
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'avatar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 213, in article_update
+    print(request.POST['avatar'])
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'avatar'
+"POST /article/article_update/18/ HTTP/1.1" 500 85010
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'avatar'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 214, in article_update
+    article.avatar = request.POST['avatar']
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'avatar'
+"POST /article/article_update/18/ HTTP/1.1" 500 85021
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /article/article_update/18/ HTTP/1.1" 302 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_list HTTP/1.1" 200 16810
+"GET /media/article/20200906/test5_yyjqXLU.jpg HTTP/1.1" 200 15535
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_update/18/ HTTP/1.1" 200 9197
+"GET /media/article/20200906/test5_yyjqXLU.jpg HTTP/1.1" 304 0
+"POST /article/article_update/18/ HTTP/1.1" 302 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_list HTTP/1.1" 200 16810
+"GET /media/article/20200906/test5_yyjqXLU.jpg HTTP/1.1" 200 15513
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_list HTTP/1.1" 200 16810
+"GET /media/article/20200906/test5_yyjqXLU.jpg HTTP/1.1" 304 0
+"GET /article/article_list?tag= HTTP/1.1" 200 16794
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_update/18/ HTTP/1.1" 200 9197
+"GET /media/article/20200906/test5_yyjqXLU.jpg HTTP/1.1" 304 0
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 216, in article_update
+    file_name = BASE_DIR + MEDIA_URL + article.avatar
+TypeError: can only concatenate str (not "ImageFieldFile") to str
+"POST /article/article_update/18/ HTTP/1.1" 500 75648
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 216, in article_update
+    file_name = BASE_DIR + MEDIA_URL + article.avatar
+TypeError: can only concatenate str (not "ImageFieldFile") to str
+"POST /article/article_update/18/ HTTP/1.1" 500 75680
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 216, in article_update
+    file_name = BASE_DIR + MEDIA_URL + article.avatar
+TypeError: can only concatenate str (not "ImageFieldFile") to str
+"POST /article/article_update/18/ HTTP/1.1" 500 75680
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /article/article_update/18/ HTTP/1.1" 302 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /media/article/20200906/test7.png HTTP/1.1" 200 99440
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15193
+"GET /article/article_detail/15/ HTTP/1.1" 200 16079
+"GET /article/article_detail/14/ HTTP/1.1" 200 15847
+"GET /article/article_update/14/ HTTP/1.1" 200 8889
+Internal Server Error: /article/article_update/14/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 240, in article_update
+    os.remove(file_name)
+PermissionError: [WinError 5] 拒绝访问。: 'D:\\Python 3\\my_blog/media/'
+"POST /article/article_update/14/ HTTP/1.1" 500 75590
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_update/14/ HTTP/1.1" 200 8889
+"POST /article/article_update/14/ HTTP/1.1" 302 0
+"GET /article/article_detail/14/ HTTP/1.1" 200 15847
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /media/article/20200906/test7.png HTTP/1.1" 304 0
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15416
+"GET /article/article_detail/14/ HTTP/1.1" 200 15847
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_update/14/ HTTP/1.1" 200 8889
+"POST /article/article_update/14/ HTTP/1.1" 302 0
+"GET /article/article_detail/14/ HTTP/1.1" 200 15847
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_detail/14/ HTTP/1.1" 200 15847
+"GET /article/article_update/14/ HTTP/1.1" 200 8889
+"POST /article/article_update/14/ HTTP/1.1" 302 0
+"GET /article/article_detail/14/ HTTP/1.1" 200 15848
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_update/14/ HTTP/1.1" 200 8889
+"POST /article/article_update/14/ HTTP/1.1" 302 0
+"GET /article/article_detail/14/ HTTP/1.1" 200 15848
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_update/14/ HTTP/1.1" 200 8889
+Internal Server Error: /article/article_update/14/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 242, in article_update
+    os.remove(file_name)
+PermissionError: [WinError 5] 拒绝访问。: 'D:\\Python 3\\my_blog/media/'
+"POST /article/article_update/14/ HTTP/1.1" 500 75491
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/14/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 242, in article_update
+    os.remove(file_name)
+PermissionError: [WinError 5] 拒绝访问。: 'D:\\Python 3\\my_blog/media/'
+"POST /article/article_update/14/ HTTP/1.1" 500 75483
+Internal Server Error: /article/article_update/14/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 242, in article_update
+    os.remove(file_name)
+PermissionError: [WinError 5] 拒绝访问。: 'D:\\Python 3\\my_blog/media/'
+"POST /article/article_update/14/ HTTP/1.1" 500 75483
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/14/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 242, in article_update
+    os.remove(file_name)
+PermissionError: [WinError 5] 拒绝访问。: 'D:\\Python 3\\my_blog/media/'
+"POST /article/article_update/14/ HTTP/1.1" 500 75483
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /article/article_update/14/ HTTP/1.1" 302 0
+"GET /article/article_detail/14/ HTTP/1.1" 200 15848
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /media/article/20200906/test7.png HTTP/1.1" 304 0
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15683
+"GET /media/article/20200906/test3.jpg HTTP/1.1" 200 17704
+"GET /article/article_detail/14/ HTTP/1.1" 200 15848
+"GET /static/layer/theme/default/icon.png HTTP/1.1" 200 11493
+"GET /article/article_safe_delete/14/ HTTP/1.1" 200 19
+"GET /article/article_detail/14/ HTTP/1.1" 200 16509
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_detail/14/ HTTP/1.1" 200 16863
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+Internal Server Error: /article/article_safe_delete/14/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 197, in article_safe_delete
+    os.remove(file_name)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\Python 3\\my_blog/media/article/20200906/test3.jpg'
+"POST /article/article_safe_delete/14/ HTTP/1.1" 500 74556
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /article/article_safe_delete/14/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /media/article/20200906/test7.png HTTP/1.1" 304 0
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15347
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_list?page=3&order=None&search=&column=None&tag=None HTTP/1.1" 200 14648
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15347
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_detail/13/ HTTP/1.1" 200 16877
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /article/article_update/13/ HTTP/1.1" 200 8904
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"POST /article/article_update/13/ HTTP/1.1" 302 0
+"GET /article/article_detail/13/ HTTP/1.1" 200 16877
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15836
+"GET /media/article/20200906/test3.jpg HTTP/1.1" 200 17704
+"GET /article/article_detail/13/ HTTP/1.1" 200 16877
+Internal Server Error: /article/article_safe_delete/13/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 197, in article_safe_delete
+    os.remove(file_name)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\Python 3\\my_blog/media/article/20200906/test3.jpg'
+"POST /article/article_safe_delete/13/ HTTP/1.1" 500 74566
+Internal Server Error: /article/article_safe_delete/13/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 197, in article_safe_delete
+    os.remove(file_name)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\Python 3\\my_blog/media/article/20200906/test3.jpg'
+"POST /article/article_safe_delete/13/ HTTP/1.1" 500 74566
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /article/article_safe_delete/13/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15555
+"GET /article/article_list?page=3&order=None&search=&column=None&tag=None HTTP/1.1" 200 14196
+"GET /article/article_detail/8/ HTTP/1.1" 200 16968
+"GET /article/article_update/8/ HTTP/1.1" 200 8923
+"POST /article/article_update/8/ HTTP/1.1" 302 0
+"GET /article/article_detail/8/ HTTP/1.1" 200 16968
+"POST /article/article_safe_delete/8/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /article/article_list?tag= HTTP/1.1" 200 16786
+"GET /media/article/20200906/test7.png HTTP/1.1" 304 0
+"GET /article/article_list?tag= HTTP/1.1" 200 16786
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_detail/18/ HTTP/1.1" 200 79961
+"GET /article/article_update/18/ HTTP/1.1" 200 9189
+"POST /article/article_update/18/ HTTP/1.1" 302 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 79961
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15555
+"GET /article/article_detail/12/ HTTP/1.1" 200 17411
+"GET /article/article_update/12/ HTTP/1.1" 200 9042
+"POST /article/article_update/12/ HTTP/1.1" 302 0
+"GET /article/article_detail/12/ HTTP/1.1" 200 17411
+"GET /article/article_list HTTP/1.1" 200 16802
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15555
+"GET /article/article_list?page=3&order=None&search=&column=None&tag=None HTTP/1.1" 200 14187
+"GET /article/article_list?page=2&order=None&search=&column=None&tag=None HTTP/1.1" 200 15555
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
