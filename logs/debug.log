@@ -2169,3 +2169,430 @@ allauth.socialaccount.models.SocialApp.DoesNotExist: SocialApp matching query do
 "GET /accounts/weibo/login/?process= HTTP/1.1" 500 94831
 "POST /accounts/login/ HTTP/1.1" 302 0
 "GET / HTTP/1.1" 200 17292
+"GET /userprofile/logout/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 15541
+"GET /accounts/login/ HTTP/1.1" 200 12723
+"POST /accounts/login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 17292
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /static/ckeditor/ckeditor/lang/zh.js?t=JB9C HTTP/1.1" 200 18470
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/lang/zh.js?t=JB9C HTTP/1.1" 200 380
+"GET /article/article_update/18/ HTTP/1.1" 200 8415
+"GET /article/article_list HTTP/1.1" 200 17292
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/angel_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/config.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/styles.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/plugin.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/icons.png?t=JB9C HTTP/1.1" 200 12421
+"GET /static/ckeditor/ckeditor/contents.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 304 0
+"GET /article/article_update/18/ HTTP/1.1" 200 8415
+"GET /article/article_update/18/ HTTP/1.1" 200 8684
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_update/18/ HTTP/1.1" 200 8672
+"POST /article/article_update/18/ HTTP/1.1" 302 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_list HTTP/1.1" 200 17292
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_update/18/ HTTP/1.1" 200 8672
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /article/article_update/18/ HTTP/1.1" 200 8672
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 213, in article_update
+    article.column = ArticleColumn.objects.get(id=article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75921
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 214, in article_update
+    article.column = ArticleColumn.objects.get(id=article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75960
+"GET /article/article_update/18/ HTTP/1.1" 200 8715
+"GET /article/article_update/18/ HTTP/1.1" 200 8715
+"GET /article/article_update/18/ HTTP/1.1" 200 8715
+"GET /userprofile/edit/4/ HTTP/1.1" 200 7531
+"GET /media/avatar/20200827/test11_N666PNp.png HTTP/1.1" 200 7883
+"GET /article/article_update/18/ HTTP/1.1" 200 8899
+"GET /article/article_update/18/ HTTP/1.1" 200 8844
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 214, in article_update
+    article.column = ArticleColumn.objects.get(id=article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75950
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 215, in article_update
+    article.column = ArticleColumn.objects.get(id=article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75954
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_create/ HTTP/1.1" 200 8598
+"GET /static/popper/popper.js.map HTTP/1.1" 404 1686
+"GET /static/bootstrap-4.5.0-dist/js/bootstrap.min.js.map HTTP/1.1" 200 191486
+"GET /static/bootstrap-4.5.0-dist/css/bootstrap.min.css.map HTTP/1.1" 200 646432
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_list HTTP/1.1" 200 17292
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_update/18/ HTTP/1.1" 200 8842
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 215, in article_update
+    article.column = ArticleColumn.objects.get(id=article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75903
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 213, in article_update
+    print(article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75899
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 214, in article_update
+    print(article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75868
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 215, in article_update
+    if 'column' in request.POST and article_cd['column'] != 'none':
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75927
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 217, in article_update
+    article.column = ArticleColumn.objects.get(id=article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75852
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 217, in article_update
+    article.column = ArticleColumn.objects.get(id=article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 75852
+"GET /article/article_list HTTP/1.1" 200 17292
+Watching for file changes with StatReloader
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /static/prism/prism.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+"GET /static/bootstrap-4.5.0-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+"GET /static/jquery/jquery-3.4.1.js HTTP/1.1" 304 0
+"GET /static/layer/layer.js HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/angry_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/wink_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/smiley/images/angel_smile.png HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/config.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/lang/zh.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/styles.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/plugin.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/lang/zh.js?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/icons.png?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/contents.css?t=JB9C HTTP/1.1" 304 0
+"GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 304 0
+"GET /article/article_update/18/ HTTP/1.1" 200 8872
+"GET /media/article/20200902/test8_EefyxUX.png HTTP/1.1" 200 90819
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 217, in article_update
+    article.column = ArticleColumn.objects.get(id=article_cd['column'])
+KeyError: 'column'
+"POST /article/article_update/18/ HTTP/1.1" 500 76192
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /article/article_update/18/ HTTP/1.1" 302 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_list HTTP/1.1" 200 16952
+"GET /media/article/20200902/test11.png HTTP/1.1" 304 0
+"GET /media/article/20200906/test10.png HTTP/1.1" 200 171119
+"GET /media/article/20200902/test_TqDKQ92.jpg HTTP/1.1" 304 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_update/18/ HTTP/1.1" 200 8787
+"GET /media/article/20200906/test10.png HTTP/1.1" 304 0
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /article/article_update/18/ HTTP/1.1" 302 0
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_list HTTP/1.1" 200 17284
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 200 15535
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_detail/18/ HTTP/1.1" 200 78941
+"GET /article/article_update/18/ HTTP/1.1" 200 9189
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 304 0
+Internal Server Error: /article/article_update/18/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 224, in article_update
+    article_post_form.save_m2m()
+AttributeError: 'ArticlePostForm' object has no attribute 'save_m2m'
+"POST /article/article_update/18/ HTTP/1.1" 500 76090
+"GET /article/article_create/ HTTP/1.1" 200 8598
+"POST /article/article_create/ HTTP/1.1" 302 0
+"GET /article/article_list HTTP/1.1" 200 16247
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 200 15513
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_list HTTP/1.1" 200 16247
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 304 0
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_update/19/ HTTP/1.1" 200 8897
+Internal Server Error: /article/article_update/19/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 224, in article_update
+    article_post_form.save_m2m()
+AttributeError: 'ArticlePostForm' object has no attribute 'save_m2m'
+"POST /article/article_update/19/ HTTP/1.1" 500 75677
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_list HTTP/1.1" 200 16526
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 304 0
+"GET /media/article/20200906/test10_P77Pqyc.png HTTP/1.1" 200 171119
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_update/19/ HTTP/1.1" 200 9029
+Internal Server Error: /article/article_update/19/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\fields\__init__.py", line 1774, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'none'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 217, in article_update
+    article.column = ArticleColumn.objects.get(id=request.POST['column'])
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\query.py", line 418, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\sql\query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\sql\query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\sql\query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\sql\query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\lookups.py", line 74, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\db\models\fields\__init__.py", line 1776, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'none'.
+"POST /article/article_update/19/ HTTP/1.1" 500 135873
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_update/19/ HTTP/1.1" 200 9029
+"GET /media/article/20200906/test10_P77Pqyc.png HTTP/1.1" 304 0
+"POST /article/article_update/19/ HTTP/1.1" 302 0
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_list HTTP/1.1" 200 16184
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 304 0
+"GET /media/article/20200906/test8.png HTTP/1.1" 200 90819
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_update/19/ HTTP/1.1" 200 8942
+"GET /media/article/20200906/test8.png HTTP/1.1" 304 0
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_update/19/ HTTP/1.1" 200 8942
+"GET /media/article/20200906/test8.png HTTP/1.1" 304 0
+"POST /article/article_update/19/ HTTP/1.1" 302 0
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_update/19/ HTTP/1.1" 200 8942
+Internal Server Error: /article/article_update/19/
+Traceback (most recent call last):
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python 3\my_blog\env\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "D:\Python 3\my_blog\article\views.py", line 225, in article_update
+    article_post_form.save_m2m()
+AttributeError: 'ArticlePostForm' object has no attribute 'save_m2m'
+"POST /article/article_update/19/ HTTP/1.1" 500 75367
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_list HTTP/1.1" 200 16185
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 304 0
+"GET /media/article/20200906/test8.png HTTP/1.1" 200 90819
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_update/19/ HTTP/1.1" 200 8942
+"POST /article/article_update/19/ HTTP/1.1" 302 0
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_list HTTP/1.1" 200 16515
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Python 3\my_blog\article\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /article/article_list HTTP/1.1" 200 16515
+"GET /media/article/20200906/test5.jpg HTTP/1.1" 304 0
+"GET /media/article/20200906/test8.png HTTP/1.1" 200 90819
+"GET /article/article_detail/19/ HTTP/1.1" 200 15850
+"GET /article/article_update/19/ HTTP/1.1" 200 9020
+"POST /article/article_update/19/ HTTP/1.1" 302 0
+"GET /article/article_detail/19/ HTTP/1.1" 200 15851
+"GET /article/article_list HTTP/1.1" 200 17221
+"GET /article/article_list?tag=Django HTTP/1.1" 200 17229
+"GET /article/article_list?tag=Python HTTP/1.1" 200 17229
+"GET /article/article_list?tag=%E6%A0%87%E7%AD%BE HTTP/1.1" 200 17229
+"GET /article/article_list?tag=Django HTTP/1.1" 200 17229
+"GET /article/article_list?tag=Python HTTP/1.1" 200 17229
+"GET /article/article_list HTTP/1.1" 200 17221

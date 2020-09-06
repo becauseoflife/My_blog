@@ -197,17 +197,30 @@ def article_update(request, id):
     # 判断用户是否是 POST 提交数据表单
     if request.method == "POST":
         # 将提交的数据赋值到表单实例中
-        article_post_form = ArticlePostForm(data=request.POST)
+        article_post_form = ArticlePostForm(request.POST, request.FILES)
         # 判断提交的数据是否满足模型的要求
         if article_post_form.is_valid():
+            print(request.POST)
+
             # 保存新写入的 title、body_content 数据并保存
             article.title = request.POST['title']
             article.body_content = request.POST['body_content']
-            if request.POST['column'] != 'none':
+
+            # 如果 request。FILES 中存在文件，则保存
+            if 'avatar' in request.FILES and request.POST['avatar'] != 'none':
+                print(request.POST['avatar'])
+                article.avatar = request.POST['avatar']
+
+            if 'column' in request.POST and request.POST['column'] != 'none':
                 article.column = ArticleColumn.objects.get(id=request.POST['column'])
             else:
                 article.column = None
+
+            # 保存tags
+            article.tags.set(*request.POST.get('tags').split(','), clear=True)
+
             article.save()
+
             # 完成修改后，返回修改后的文章。需要传入文章的 id
             return redirect("article:article_detail", id=id)
         # 如果用户提交的数据不合法，返回错误信息

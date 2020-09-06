@@ -5,13 +5,26 @@
     <div class="row">
         <div class="col-12">
             <br>
-            <form method="post" action=".">
+            <form method="post" action="." enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="title">文章标题</label>
                     <!-- 在 value 属性中指定文本框的初始值为旧的内容，即 article 对象中的 title 字段 -->
                     <input type="text" class="form-control" id="title" name="title" value="{{ article.title }}">
                 </div>
+
+                {% if article.avatar %}
+                    <div class="col-md-4">标题图</div>
+                    <img src="{{ article.avatar.url }}" style="max-width: 20%; border-radius: 15%;" class="col-md-4">
+                {% else %}
+                    <h3 class="col-md-4">暂无标题图</h3>
+                {% endif %}
+                <!-- 文章标题图 -->
+                <div class="form-group">
+
+                    <input type="file" class="form-control-file" name="avatar" id="avatar">
+                </div>
+
                 <!-- 文章栏目 -->
                 <div class="form-group">
                     <label for="column">栏目</label>
@@ -31,6 +44,16 @@
                         {% endfor %}
                     </select>
                 </div>
+
+                <!-- 文章标签 -->
+                <div class="form-group">
+                    <label for="tags">标签</label>
+                    <input type="text"
+                           class="form-control col-3"
+                           id="tags"
+                           name="tags"
+                    >
+
                 <div class="form-group">
                     <label for="body">文章正文</label>
                     <!-- 文本域不需要 value 属性，直接在标签体中嵌入数据即可 -->
